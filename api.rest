@@ -1,0 +1,47 @@
+GET  http://127.0.0.1:3000/api/data/users
+
+###
+
+GET  http://127.0.0.1:3000/api/data/users/1
+
+###
+
+POST http://127.0.0.1:3000/api/data/users
+Content-Type: application/json
+
+{
+    "username": "Kuda",
+    "password": "singa"
+}
+
+###
+
+PUT http://127.0.0.1:3000/api/data/users/1
+Content-Type: application/json
+
+{
+    "password": "123qwe"
+}
+
+### FACT
+
+GET http://127.0.0.1:3000/api/data/facts
+
+###
+
+GET http://127.0.0.1:3000/api/data/facts/2
+
+###
+
+POST http://127.0.0.1:3000/api/data/facts
+Content-Type: application/json
+
+{
+    "user_fact": "Aini adalah sepupu Ani",
+    "likes": 100,
+    "user_id": 1
+}
+
+###
+
+DELETE  http://127.0.0.1:3000/api/data/facts/1
